@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+.spinner {
+  padding: 50px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: aliceblue;
+  z-index: 1041;
+}
+.spinner-grow {
+  margin-right: 6px;
+}

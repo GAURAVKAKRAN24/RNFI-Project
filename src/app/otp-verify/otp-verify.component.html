@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <h1 class="text-center my-5">Please Verify OTP</h1>
+      <div class="col align-self-start">
+        <form [formGroup]="optForm" (ngSubmit)="verifyOTP()">
+            <div class="mb-3">
+              <label for="username" class="form-label">OTP</label>
+              <input maxlength="6" pattern="\d{6}" (keypress)="numberOnly($event)" type="text" class="form-control" id="username" formControlName="otp">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Verify</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="spinner" *ngIf="loader">
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-info" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-dark" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+  </div>

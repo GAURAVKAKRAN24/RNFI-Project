@@ -1,0 +1,11 @@
+.wrapper {
+  width: 100%;
+  padding: 40px 10px;
+}
+.group {
+  display: flex;
+}
+.wr {
+  display: flex;
+  flex-direction: column;
+}

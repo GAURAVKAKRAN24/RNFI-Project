@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form class="form-inline" [formGroup]="dynamicForm" (ngSubmit)="onSubmit()">                                
+                
+                <div formArrayName="rnfi">
+                    <ng-container *ngFor="let x of dynamicForm.get('rnfi').controls; let i = index">
+                        {{x.value | json}}
+                        <!-- <input type="text" formControlName="{{i | json}}" > -->
+                    </ng-container>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
